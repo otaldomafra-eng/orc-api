@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+
+# Local data and generated files
+.sync-storage/
+*.db
+*.sqlite
+*.sqlite3
+downloads/
+backups/
+*.zip
+*.xlsx
+*.xls
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
