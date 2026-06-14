@@ -1,0 +1,25 @@
+[project]
+name = "orc-api"
+version = "0.1.0"
+description = "API privada para SINAPI TO com sincronizacao automatica da CAIXA"
+requires-python = ">=3.12"
+dependencies = [
+  "alembic==1.16.2",
+  "fastapi==0.115.14",
+  "httpx==0.28.1",
+  "openpyxl==3.1.5",
+  "psycopg[binary]==3.2.9",
+  "pydantic-settings==2.10.1",
+  "python-multipart==0.0.20",
+  "sqlalchemy==2.0.41",
+  "uvicorn[standard]==0.35.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.4.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
